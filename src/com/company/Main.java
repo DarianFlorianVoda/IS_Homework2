@@ -18,9 +18,10 @@ public class Main {
         int[] preferences = new int[2];
         preferences[0] = 21;
         preferences[1] = 23;
-        int[] temperatures = new int[10];
-        preferences[0] = 18;
-        preferences[1] = 19;
+        int[] temperatures = new int[12];
+        for(int i=16;i<=27;i++){
+            temperatures[i-16] = i;
+        }
         try {
             /*AgentController rma = mc.createNewAgent("rma", "jade.tools.rma.rma", null);
             rma.start();
